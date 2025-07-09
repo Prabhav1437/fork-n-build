@@ -1,0 +1,140 @@
+:root {
+  --bg-light: #f5f7fa;
+  --bg-dark: #0f0f1a;
+  --primary: #7f5af0;
+  --accent: #2cb67d;
+  --text-light: #1f1f1f;
+  --text-dark: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  cursor: none;
+  overflow-x: hidden;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.App.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.App.light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.toggle-mode {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.toggle-mode:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+
+.cursor,
+.cursor-dot {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference; /* Optional: adds glow effect on dark backgrounds */
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(127, 90, 240, 0.15); /* slightly more transparent */
+  transition: transform 0.15s ease;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary, #00bcd4); /* fallback to blue */
+  transition: transform 0.05s ease;
+}
+.meteor-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0; /* Keep it behind everything */
+  overflow: hidden;
+}
+
+.meteor {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: white;
+  opacity: 0.3;
+  transform: rotate(45deg);
+  animation: meteor-fall linear infinite;
+}
+
+@keyframes meteor-fall {
+  from {
+    transform: translateY(-200vh) rotate(45deg); /* was -100px */
+    opacity: 0.6;
+  }
+  to {
+    transform: translateY(100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+.simple-footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  background: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .simple-footer {
+  color: #bbb;
+}
+
+.light .simple-footer {
+  color: #555;
+}

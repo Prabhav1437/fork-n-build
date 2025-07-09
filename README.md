@@ -1,49 +1,30 @@
-# 🚀 Make It Yours
+# 🚀 React Bio Card – Prabhav Jain
 
-Welcome to your first mini project challenge!
-
-## 🎯 Objective
-Fork this repo and build something **small but creative** based on your current tech skills.
-
-- Use `src/` to build your actual project (HTML, JS, Python, etc.)
-- Add images/media to `assets/`
-- Document your project or write logs in `docs/` or update this README
-
-### It doesn't matter what skill level you're at — whether you've just started HTML, explored the basics of Python, or even completed full stack development. Let's create something, learn through it, vibe with the code, and remember — we’re always here if you get stuck!
-
-## 💡 Ideas by Skill Level
-
-### 🟢 Beginners
-- Personal Bio Page (HTML)
-- Bucket List (Markdown)
-- Travel Blog (Static Page)
-- CLI Resume
-- CLI Maze Game  
-etc.
-
-### 🔵 Intermediate
-- Guess the Number CLI Game
-- JS Quiz App
-- Markdown Journal  
-etc.
-
-### 🟣 Advanced
-- React Bio Card
-- Flask Quotes API
-- Notes App with Local Storage  
-etc.
+Welcome to my mini project — a **dynamic personal bio card** built with React and styled with custom animations, interactive cursor, and a meteor-shower themed background!
 
 ---
 
-## 📤 Submission
-1. Fork this repo  
-2. Build inside `src/`  
-3. Update this `README.md` with:  
-   - Project name  
-   - Description  
-   - Stack used  
-   - How to run / If it's hosted, feel free to share the link.  
-4. Push your code and share your repo or GitHub Pages link
+## 🎯 Objective
 
-Happy building 🚀
-Team REvamp⚡️
+This project is part of the *Fork-n-Build* challenge. The goal was to create something personal and visually engaging using current tech skills — so I built a React-based personal portfolio page with:
+
+- Animated Bio Card  
+- Skills popup with icons  
+- Project cards with images  
+- Contact section with a message form  
+- Light/Dark mode toggle  
+- Custom cursor and meteor shower animation
+
+---
+
+## 📁 Project Structure
+
+📦 src/
+├── assets/ # Images and logos
+├── components/ # BioCard, Skills, Projects, etc.
+├── App.jsx # Main App
+├── App.css # Styling and animations
+└── index.js
+
+🙌 Credits
+Thanks to Team REvamp⚡️ for the creative challenge and support!
