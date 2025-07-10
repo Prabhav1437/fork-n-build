@@ -90,37 +90,7 @@ body {
   background-color: var(--primary, #00bcd4); /* fallback to blue */
   transition: transform 0.05s ease;
 }
-.meteor-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 0; /* Keep it behind everything */
-  overflow: hidden;
-}
 
-.meteor {
-  position: absolute;
-  width: 2px;
-  height: 100px;
-  background: white;
-  opacity: 0.3;
-  transform: rotate(45deg);
-  animation: meteor-fall linear infinite;
-}
-
-@keyframes meteor-fall {
-  from {
-    transform: translateY(-200vh) rotate(45deg); /* was -100px */
-    opacity: 0.6;
-  }
-  to {
-    transform: translateY(100vh) rotate(45deg);
-    opacity: 0;
-  }
-}
 .simple-footer {
   text-align: center;
   padding: 1.5rem;
