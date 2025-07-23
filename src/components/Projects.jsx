@@ -3,7 +3,7 @@ import './Projects.css';
 import cartImg from '../assets/autocart.jpg';
 import nebulaImg from '../assets/nebula.jpeg';
 import soonImg from '../assets/cmg.jpg';
-
+import jees from '../assets/jees.jpg';
 const projects = [
   {
     title: 'Auto Cart',
@@ -14,6 +14,11 @@ const projects = [
     title: 'Project Nebula',
     image: nebulaImg,
     description: 'Organized by: SAST Club, NST RU , I contributed to this collaborative initiative focused on creative exploration and innovation using tech.The project was an exciting opportunity to work alongside talented peers and build something impactful. 👉 Check out the code and contributions on my GitHub',
+  },
+  {
+    title: 'Jee Advancve 2025 Score Calculator',
+    image: jees,
+    description: '🧠 JEE ADV 2025 Score Calculator Tech Stack: Python(Streamlit,BeautifulSoup) A smart tool built to help JEE Advanced 2025 aspirants instantly calculate their total score by simply pasting the response sheet URLs from both Paper 1 and Paper 2. For more check GitHub page.      🤝 Team Contribution: Frontend: Prabhav Jain Backend: Akshat Jain.'
   },
   {
     title: 'More Projects',
