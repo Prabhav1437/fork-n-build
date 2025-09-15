@@ -2,7 +2,7 @@
   text-align: center;
   margin-top: 4rem;
   padding: 2rem;
-  z-index: 0;
+  z-index: -1000;
 }
 
 .projects-section h2 {
